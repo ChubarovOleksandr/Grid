@@ -1,0 +1,367 @@
+@import url(../css/nullstyle.css);
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap");
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0px;
+}
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  background: url(../img/header-bg.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 937px;
+}
+
+.container {
+  min-width: 1150px;
+  margin: 0 auto;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 0 200px 0;
+}
+
+.burger {
+  text-align: center;
+}
+
+.burger_text {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.low-header h1 {
+  font-size: 72px;
+  font-weight: 300;
+}
+.low-header h5 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.low-header h5 span {
+  font-weight: 700;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(200px, auto));
+  grid-gap: 0;
+}
+.main .block img {
+  height: 100%;
+  width: 100%;
+}
+.main .block_1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.main .block_2 {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  background-color: #f3f1ef;
+}
+.main .block_2 .body_block {
+  max-width: 520px;
+  padding: 100px 0 70px 60px;
+}
+.main .block_2 .body_block h4 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #666666;
+}
+.main .block_2 .body_block p {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-size: 38px;
+  color: #666666;
+}
+.main .block_3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.main .block_4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.main .block_5 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.main .block_6 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.main .bgblock {
+  padding: 150px 0 0 200px;
+}
+.main .block_7 {
+  grid-column: 1/5;
+  grid-row: 3/4;
+  background-color: #3f729b;
+}
+.main .block_7 h4 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  color: #f9f9f9;
+  font-size: 25px;
+}
+.main .block_7 p {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  color: #f9f9f9;
+  font-size: 36px;
+  max-width: 540px;
+}
+.main .block_7 .button {
+  display: inline-block;
+  padding: 15px 20px;
+  border: 1px solid #f9f9f9;
+  border-radius: 30px;
+}
+.main .block_7 .button a {
+  color: #f9f9f9;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.main .block_8 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.banner .grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(400px, auto));
+  grid-template-rows: 1fr 1fr;
+  background-color: #282b2f;
+}
+.banner .grid .block__1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #212227;
+  z-index: 50;
+  padding: 100px 90px 80px 60px;
+}
+.banner .grid .block__1 p {
+  font-size: 14px;
+  color: #f9f9f9;
+  font-weight: 400;
+}
+.banner .grid .block__1 h3 {
+  font-size: 24px;
+  color: #2ebd59;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.banner .grid .block__1 h4 {
+  font-size: 18px;
+  color: #2ebd59;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.banner .grid .block__1 .button {
+  margin-top: 90px;
+}
+.banner .grid .block__1 .button a {
+  text-transform: uppercase;
+  color: #2ebd59;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 1px solid #2ebd59;
+  border-radius: 30px;
+}
+.banner .grid .block__2 {
+  grid-column: 2/5;
+  grid-row: 1/3;
+  z-index: 1;
+  background-image: url(../img/bgphoto.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+
+.music {
+  display: flex;
+}
+.music .msc {
+  padding: 120px 0 0 150px;
+}
+
+.spotify {
+  width: 50%;
+  height: 25em;
+  background-color: #2ebd59;
+}
+.spotify h4 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #f9f9f9;
+}
+.spotify p {
+  font-weight: 300;
+  font-size: 36px;
+  color: #f9f9f9;
+}
+
+.music_button a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  letter-spacing: 5px;
+}
+
+.itunes {
+  background-color: #282b2f;
+  width: 50%;
+}
+.itunes h4 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #f9f9f9;
+}
+.itunes p {
+  font-weight: 300;
+  font-size: 36px;
+  color: #f9f9f9;
+}
+
+.footer {
+  background-color: #212227;
+  min-height: 650px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.container {
+  min-width: 1150px;
+  padding: 130px 0 0 0;
+}
+
+.footer_body {
+  display: flex;
+}
+
+.col-1 {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.part-1 {
+  padding: 0 130px 0 0;
+}
+.part-1 h3 {
+  font-weight: 700;
+  color: #f9f9f9;
+  font-size: 18px;
+  padding: 0 0 15px 0;
+}
+.part-1 p {
+  color: #919191;
+  font-size: 14px;
+  max-width: 300px;
+  word-wrap: break-word;
+  word-spacing: 1px;
+  padding: 0 0 15px 0;
+}
+
+.part-2 {
+  padding: 0 50px 0 0;
+}
+.part-2 h3 {
+  font-weight: 700;
+  color: #f9f9f9;
+  font-size: 18px;
+}
+.part-2 a {
+  color: #919191;
+  font-size: 14px;
+}
+.part-2 p {
+  color: #919191;
+  font-size: 14px;
+}
+
+.follow {
+  padding: 40px 0 0 0;
+}
+.follow a {
+  display: inline-block;
+  font-weight: 700;
+  color: #919191;
+  opacity: 0.6;
+}
+.follow a:hover {
+  border-bottom: 1px solid #f9f9f9;
+  color: #f9f9f9;
+  transition-duration: 0.5s;
+}
+
+.sub {
+  width: 35em;
+  padding-left: 40px;
+}
+.sub h3 {
+  font-weight: 700;
+  color: #f9f9f9;
+  font-size: 18px;
+}
+.sub p {
+  color: #919191;
+  font-size: 14px;
+  word-spacing: 1px;
+  word-break: break-all;
+}
+.sub input {
+  width: 100%;
+  height: 45px;
+  background-color: #4d4e52;
+  border: none;
+  padding-left: 20px;
+}
+
+.sponsor {
+  padding: 40px 0 0 40px;
+}
+.sponsor h3 {
+  font-weight: 700;
+  color: #f9f9f9;
+  font-size: 18px;
+}
+.sponsor .block {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #f9f9f9;
+  color: #f9f9f9;
+  text-align: center;
+  line-height: 80px;
+}
+.sponsor .block:hover {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  transition-duration: 1s;
+  font-size: 20px;
+}
